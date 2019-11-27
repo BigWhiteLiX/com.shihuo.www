@@ -1,0 +1,109 @@
+.seek {
+    height: 85px;
+}
+
+.seek-top {
+    padding-top: 16px;
+    height: 85px;
+    box-sizing: border-box;
+}
+
+.seek-top img {
+    float: left;
+    height: 37px;
+    margin-right: 72px;
+}
+
+.seek-centen {
+    float: left;
+    width: 504px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 2px solid #ff4338;
+
+}
+
+.seek-centen input {
+    border: none;
+    width: 300px;
+    height: 30px;
+
+
+}
+
+.seek-centen button {
+    position: relative;
+    float: right;
+    height: 35px;
+    width: 55px;
+    background-color: #ff4338;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.seek-centen-small {
+    position: absolute;
+    top: 29px;
+    left: 391px;
+}
+
+.seek-centen-small a {
+    font-size: 12px;
+    color: #666666;
+    padding: 0 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+
+.seek-centen span {
+    float: right;
+    font-size: 12px;
+    color: #ff4338;
+    line-height: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+
+.seek-top-right {
+    float: right;
+    height: 62px;
+    width: 164px;
+}
+
+.seek-top-right span {
+    float: left;
+    color: #474747;
+    margin-top: 14px;
+    padding-right: 6px;
+}
+
+.seek-top-right img {
+    float: right;
+    width: 60px;
+    height: 57px;
+    margin: 0 auto;
+
+}
+
+/* 2.导购栏 */
+.shooping {
+    height: 40px;
+    background-color: #ff4338;
+}
+
+.shooping-left {
+    float: left;
+}
+
+.shooping-left a {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 56px;
+    line-height: 40px;
+}
