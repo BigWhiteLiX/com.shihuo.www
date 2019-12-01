@@ -549,3 +549,16 @@ body {
 .flash-right-one span:hover {
     color: #ff4338;
 }
+
+.flash-left-two {
+    float: left;
+    height: 210px;
+    width: 800px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.flash-left-two img {
+    width: 240px;
+    height: 180px;
+}
