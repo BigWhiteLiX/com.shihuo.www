@@ -5,6 +5,7 @@ body {
 .left {
     float: left;
     width: 800;
+    box-sizing: border-box;
 }
 
 .seek {
@@ -457,6 +458,41 @@ body {
     border: 1px solid #ff4338;
 }
 
+
+.flash-bottom {
+    float: left;
+    width: 142px;
+    height: 225px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.flash-bottom a {
+    display: inline-block;
+    font-size: 12px;
+    color: #333333;
+
+}
+
+.flash-bottom a:hover {
+    color: #ff4338;
+}
+
+.flash-bottom img {
+    height: 142px;
+    padding-bottom: 19px;
+}
+
+.flash-bottom span {
+    float: left;
+    font-size: 13px;
+    color: #ff4338;
+}
+
+.flash-bottom-four {
+    margin-top: 12px;
+}
+
 /* 热门团购 */
 .group {
     float: left;
@@ -517,22 +553,82 @@ body {
 
 }
 
-.group-bottom:before {
-    content: "";
+.group-bottom a:nth-child(1):before {
+    content: "Conversez匡威正品1970s";
     position: absolute;
-    display: inline-block;
+    display: none;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     width: 100px;
-    left: 0px;
+    left: 22px;
     top: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 34px;
+    box-sizing: border-box;
+}
+
+.group-bottom a:nth-child(2):before {
+    content: "耐克Nike zoom";
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    left: 144px;
+    top: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 34px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.group-bottom a:nth-child(3):before {
+    content: "耐克Flight Legacy AJ4";
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    left: 23px;
+    top: 146px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 34px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.group-bottom a:nth-child(4):before {
+    content: "Puma Clyde Courd艾顿库";
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    right: 29px;
+    bottom: 46px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 34px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.group-bottom a:nth-child(-n+4):hover:before {
+    display: block;
 }
 
 .group-bottom span {
     display: block;
     color: #ff4338;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .group-bottom span>i {
@@ -542,40 +638,89 @@ body {
     margin-left: 3px;
 }
 
-.flash-bottom {
-    float: left;
-    width: 142px;
-    height: 225px;
+/* 热门优惠 */
+.discounts {
+    position: absolute;
+    width: 270px;
+    height: 340px;
+    background-color: #fff;
+    margin-left: -14px;
+    margin-top: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
+    top: 790px;
+}
+
+.discounts-top {
+    width: 270px;
+    height: 57px;
+}
+
+.discounts-top span {
+    float: left;
+    color: #333333;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 57px;
+    margin-left: 15px;
+}
+
+.discounts-top a {
+    float: right;
+    font-size: 14px;
+    color: #666666;
+    line-height: 57px;
     margin-right: 15px;
 }
 
-.flash-bottom a {
-    display: inline-block;
+.discounts-top i {
+    color: #9e9e9e;
     font-size: 12px;
-    color: #333333;
-    margin-left: 20px;
-
 }
 
-.flash-bottom a:hover {
+.discounts-top a:hover {
     color: #ff4338;
+
 }
 
-.flash-bottom img {
-    height: 142px;
-    padding-bottom: 19px;
-}
-
-.flash-bottom span {
+.discounts-bottom {
     float: left;
-    font-size: 13px;
+    height: 74px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+.discounts-bottom img {
+    float: left;
+    height: 74px;
+
+    margin-right: 10px;
+}
+
+.discounts-bottom img:nth-child(3) {
+    margin-bottom: 17px;
+}
+
+.discounts-bottom a {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.discounts-bottom span {
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
     color: #ff4338;
 }
 
-.flash-bottom-four {
-    margin-top: 12px;
+.discounts a:hover {
+    color: #ff4338;
 }
+
 
 .flash-right {
     float: right;
@@ -640,7 +785,7 @@ body {
     color: #ff4338;
 }
 
-.flash-left-two {
+.flash-left-ad {
     position: relative;
     float: left;
     height: 210px;
@@ -649,7 +794,11 @@ body {
     margin-top: 10px;
 }
 
-.flash-left-two img {
+.flash-left-ad:hover {
+    box-shadow: 1px 1px 3px 2px #cdcdcd
+}
+
+.flash-left-ad img {
     float: left;
     width: 230px;
     height: 190px;
@@ -657,7 +806,7 @@ body {
     margin-top: 10px;
 }
 
-.flash-left-two b {
+.flash-left-ad b {
     position: absolute;
     display: inline-block;
     color: #ffffff;
@@ -673,17 +822,17 @@ body {
     font-size: 14px;
 }
 
-.flash-left-two-a {
+.flash-left-ad-a {
     float: left;
     margin-left: 20px;
     margin-top: 17px;
 }
 
-.flash-left-two-a span:hover {
+.flash-left-ad-a span:hover {
     color: #ff4338;
 }
 
-.flash-left-two i {
+.flash-left-ad i {
     float: left;
     width: 55px;
     height: 20px;
@@ -695,7 +844,7 @@ body {
 
 }
 
-.flash-left-two-a a {
+.flash-left-ad-a a {
     float: left;
     font-size: 16px;
     color: #333333;
@@ -704,7 +853,7 @@ body {
     margin-top: 2px;
 }
 
-.flash-left-two p {
+.flash-left-ad p {
     float: left;
     color: #999999;
     margin-left: 20px;
@@ -714,19 +863,19 @@ body {
     margin-top: 14px;
 }
 
-.flash-left-two s {
+.flash-left-ad s {
     float: left;
     margin-top: 60px;
 }
 
-.flash-left-two s>img {
+.flash-left-ad s>img {
     float: left;
     height: 20px;
     width: 20px;
     border-radius: 50%;
 }
 
-.flash-left-two s>span {
+.flash-left-ad s>span {
     display: inline-block;
     font-size: 12px;
     color: #333333;
@@ -734,7 +883,7 @@ body {
     margin-left: 5px;
 }
 
-.flash-left-two-font {
+.flash-left-ad-font {
     float: right;
     margin-top: 70px;
     margin-right: 20px;
@@ -744,20 +893,20 @@ body {
     color: #ff4338;
 }
 
-.flash-left-two-font d:hover {
+.flash-left-ad-font d:hover {
     color: #ff4338;
 }
 
-.flash-left-two-font a>span {
+.flash-left-ad-font a>span {
     font-size: 20px;
     color: #cdcdcd;
 }
 
-.flash-left-two-font a {
+.flash-left-ad-font a {
     margin: 0 4px;
 }
 
-.flash-left-two-font d {
+.flash-left-ad-font d {
     color: #999999;
     font-size: 14px;
     line-height: 20px;
@@ -765,9 +914,250 @@ body {
 
 /* 鞋子广告 */
 .shoes {
+    position: relative;
     float: left;
     width: 260px;
     height: 340px;
     background-color: #fff;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
+.shoes:hover {
+    box-shadow: 1px 1px 3px 2px #cdcdcd
+}
+
+
+.shoes img {
+    height: 200px;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+
+.shoes:nth-child(3) {
+    margin-right: 0;
+}
+
+.shoes a {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-left: 70px;
+
+}
+
+.shoes a:hover {
+    color: #ff4338;
+}
+
+.shoes p {
+    font-size: 14px;
+    /* margin-left: 20px;*/
+    margin-top: 20px;
+    text-align: center;
+}
+
+.shoes span {
+    position: absolute;
+    font-size: 16px;
+    color: #ff4338;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.more {
+    float: left;
+    height: 40px;
+    width: 800px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.more span {
+    float: left;
+    font-size: 14px;
+    margin-left: 380px;
+    line-height: 40px;
+    color: #333333;
+}
+
+
+/* 底部图标 */
+.ico {
+    height: 162px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    background-image: url("../img/all-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ico-top {
+    height: 10px;
+    width: 100%;
+    border-bottom: 1px dashed #bdbdbd
+}
+
+/* 其他 */
+.others {
+    height: 208px;
+    width: 100%;
+}
+
+.others-box a:hover {
+    color: #ff4338;
+}
+
+.others-box {
+    position: relative;
+    float: left;
+    margin-left: 565px;
+    height: 190px;
+    width: 741px;
+}
+
+.others-left {
+    float: left;
+    margin-left: 114px;
+}
+
+.others-left dt {
+    font-size: 17px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 27px;
+}
+
+.others-left dd>a {
+    font-size: 12px;
+    color: #666666;
+    line-height: 2;
+}
+
+.others-one {
+    position: absolute;
+    top: 17px;
+    left: 65px;
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+}
+
+.others-one span {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 8px;
+}
+
+.others-two {
+    position: absolute;
+    top: 17px;
+    left: 245px;
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+}
+
+.others-two span {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 8px;
+}
+
+.others-three {
+    position: absolute;
+    top: 17px;
+    left: 428px;
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+}
+
+.others-three span {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 8px;
+}
+
+.others-four {
+    position: absolute;
+    top: 17px;
+    left: 624px;
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+}
+
+.others-four span {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 8px;
+}
+
+/* 底部 */
+.footer {
+    height: 185px;
+    background-color: #ffffff;
+    padding: 19px;
+}
+
+.footer-one {
+    text-align: center;
+}
+
+.footer-one a,
+.footer-two a,
+.footer-three a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.footer a:hover {
+    color: #ff4338;
+}
+
+.footer-one span,
+.footer-two span {
+    color: #f2f2f2;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.footer-one i,
+.footer-two i {
+    color: #999999;
+    font-size: 12px;
+}
+
+.footer-two {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-three {
+    text-align: center;
+    margin-top: 10px;
+    color: #999999;
+}
+
+.footer-four {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-four img {
+    margin: 0 5px;
 }
