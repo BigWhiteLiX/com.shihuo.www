@@ -1,0 +1,248 @@
+body {
+    background-color: #f1f1f1;
+}
+
+/* 搜索栏 */
+.seek {
+    height: 85px;
+    background-color: #fff;
+}
+
+.seek-top {
+    padding-top: 16px;
+    height: 85px;
+    box-sizing: border-box;
+}
+
+.seek-top img {
+    float: left;
+    height: 40px;
+    margin-right: 72px;
+}
+
+.seek-centen {
+    float: left;
+    width: 504px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 2px solid #ff4338;
+
+}
+
+.seek-centen input {
+    border: none;
+    width: 300px;
+    height: 30px;
+
+
+}
+
+.seek-centen button {
+    position: relative;
+    float: right;
+    height: 35px;
+    width: 55px;
+    background-color: #ff4338;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.seek-centen-small {
+    position: absolute;
+    top: 29px;
+    left: 391px;
+}
+
+.seek-centen-small a {
+    font-size: 12px;
+    color: #666666;
+    padding: 0 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+
+.seek-centen span {
+    float: right;
+    font-size: 12px;
+    color: #ff4338;
+    line-height: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+.seek-top-right {
+    float: right;
+
+}
+
+.seek-top-right img {
+    height: 60px;
+    margin-right: 0px;
+}
+
+/* 2.导购栏 */
+.shooping {
+    height: 40px;
+    background-color: #ff4338;
+}
+
+.shooping-left {
+    float: left;
+}
+
+.shooping-left a {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 28px;
+    line-height: 40px;
+}
+
+.shooping-left a:hover {
+    background-color: red;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.shooping-right {
+    float: right;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 40px;
+    padding-right: 10px;
+}
+
+.shooping-right span {
+    padding: 0 6px;
+}
+
+/* 3.产品分类 */
+.kind {
+    height: 40px;
+    background-color: #ffffff;
+}
+
+.kind-left {
+    float: left;
+    padding-left: 10px;
+    height: 19px;
+    border-left: 2px solid #b70000;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.kind-left span {
+    font-size: 16px;
+    color: #333333;
+}
+
+.kind-left a {
+    padding: 0 30px;
+    border-right: 1px solid#e5e5e5;
+    color: #666666;
+    font-size: 13px;
+}
+
+.kind-left a:hover {
+    color: #ff4338;
+}
+
+.kind-left i {
+    color: #8c8c8c;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.kind-left a:hover i {
+    color: #b71000;
+}
+
+/* 4.轮播图 */
+.watch {
+    height: 360px;
+    background-color: #548dd4;
+}
+
+.watch-left {
+    float: left;
+    width: 330px;
+    height: 360px;
+    background-color: #dce6f1;
+}
+
+
+.watch-left-ball {
+    height: 90px;
+    width: 330px;
+    padding-left: 23px;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+
+.watch-left-ball span {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.watch-left-ball span:hover {
+    color: #b70000;
+}
+
+.watch-left-ball a:hover {
+    color: #ff4338;
+}
+
+.watch-left-ball a {
+    font-size: 13px;
+    margin-right: 22px;
+    color: #333333;
+}
+
+
+
+.watch-left-ball:hover {
+    background-color: #fff;
+    border: 1px solid#f5f5f5;
+    border-left: 3px solid #333333;
+    border-right: 1px solid #ffffff;
+}
+
+.watch-right {
+    position: relative;
+    float: right;
+}
+
+.watch-right img {
+    height: 360px;
+    width: 750px;
+}
+
+.watch-right-hide {
+    position: absolute;
+    bottom: 20px;
+    right: 333px;
+}
+
+.watch-right-hide span {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 5px;
+}
+
+.watch-right-hide span:nth-child(2) {
+    background-color: #ff4338;
+}
+
+.watch-right-hide span:hover {
+    background-color: #ff4338;
+}

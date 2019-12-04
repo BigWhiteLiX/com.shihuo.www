@@ -21,7 +21,7 @@ body {
 
 .seek-top img {
     float: left;
-    height: 37px;
+    height: 40px;
     margin-right: 72px;
 }
 
@@ -79,34 +79,14 @@ body {
 
 }
 
-
 .seek-top-right {
-    position: relative;
     float: right;
-    height: 62px;
-    width: 164px;
-    box-sizing: border-box;
-}
 
-
-
-.seek-top-right span {
-    position: absolute;
-    color: #474747;
-    font-size: 14px;
-    text-indent: 2em;
-    top: 14px;
-    right: 59px;
-    width: 115px;
-    font-weight: 600px;
 }
 
 .seek-top-right img {
-    float: right;
-    width: 60px;
-    height: 57px;
-    margin: 0 auto;
-
+    height: 60px;
+    margin-right: 0px;
 }
 
 /* 2.导购栏 */
