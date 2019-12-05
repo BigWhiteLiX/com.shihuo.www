@@ -414,6 +414,7 @@ body {
     height: 297px;
     background-color: #ffffff;
     padding-top: 15px;
+    box-sizing: border-box;
 }
 
 .wish-bottom-conter {
@@ -554,6 +555,7 @@ body {
 /* 7.销量排行 */
 .sales {
     height: 395px;
+    box-sizing: border-box;
 }
 
 .sales-top {
@@ -581,18 +583,27 @@ body {
     margin-right: 125px;
 }
 
+.sales-bottom {
+    position: relative;
+}
+
 .sales-bottom-box {
+    position: relative;
     float: left;
     display: block;
     height: 340px;
     width: 208px;
     background-color: #fff;
     margin-right: 10px;
-
+    box-sizing: border-box;
 }
 
 .sales-bottom-box:nth-child(5) {
     margin-right: 0px;
+}
+
+.sales-bottom-box:hover p {
+    color: #ff4338;
 }
 
 .sales-bottom-box img {
@@ -628,8 +639,206 @@ body {
     color: #333333;
 }
 
-/* .sales-bottom-box i:nth-child(1),
-.sales-bottom-box i:nth-child(4){
-    margin-top: 0px;
-    margin-left: 0px;
-} */
+.sales-bottom-box:nth-child(1) i,
+.sales-bottom-box:nth-child(4) i {
+    margin-top: 67px;
+    margin-left: 12px;
+}
+
+.sales-bottom-box:nth-child(-n+4):before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid red;
+    border-right: 20px solid transparent;
+    border-top: 20px solid red;
+}
+
+.sales-bottom-box:nth-child(-n+4) b {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.sales-bottom-box:nth-child(5):before {
+    content: "发布时间2019-04-19";
+    display: block;
+    position: absolute;
+    height: 40px;
+    width: 208px;
+    background-color: #ff4338;
+    bottom: -210px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    top: 167px;
+
+}
+
+.sales-bottom-jiantou {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    top: 80px;
+    right: 218px;
+}
+
+.sales-bottom-jiantou img {
+    height: 19px;
+    width: 12px;
+    margin-top: 15px;
+}
+
+.sales-bottom-jiantou:hover {
+    background-color: #000000;
+}
+
+.sales-bottom:hover .sales-bottom-jiantou {
+    display: block;
+}
+
+/* 热门文章 */
+.articles {
+    height: 340px;
+}
+
+.articles-top {
+    height: 55px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.articles-top span {
+    float: left;
+    font-size: 18px;
+    color: #333333;
+    border-left: 4px solid #ff4338;
+    padding-left: 6px;
+    font-weight: bold;
+}
+
+.articles-bottom-box {
+    position: relative;
+    display: block;
+    float: left;
+    display: block;
+    height: 285px;
+    width: 208px;
+    background-color: #fff;
+    margin-right: 10px;
+
+}
+
+.articles-bottom-box:nth-child(5) {
+    margin-right: 0px;
+}
+
+.articles-bottom-box img {
+    height: 190px;
+    width: 208px;
+}
+
+.articles-bottom-box span {
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 208px;
+    bottom: 80px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.articles-bottom-box img:nth-child(3) {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.articles-bottom-box p {
+    float: left;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.articles-bottom-box i {
+    position: absolute;
+    color: #999999;
+    font-size: 12px;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+
+.articles-right-bottom b:hover {
+    color: #ff4338;
+}
+
+.articles-right-bottom s:hover {
+    color: #ff4338;
+}
+
+.articles-right-bottom b {
+    font-size: 16px;
+    color: #cdcdcd;
+}
+
+.articles-right-bottom {
+    float: right;
+    margin: 0 4px;
+    margin-top: 65px;
+}
+
+.articles-right-bottom s {
+    color: #999999;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* 9.猜你喜欢 */
+.like-top {
+    height: 55px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.like-top span {
+    float: left;
+    font-size: 18px;
+    color: #333333;
+    border-left: 4px solid #ff4338;
+    padding-left: 6px;
+    font-weight: bold;
+}
+
+.like-bottom-box {
+    float: left;
+    height: 340px;
+    width: 208px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom:10px ;
+}
+
+.like-bottom-box:nth-child(5) {
+    margin-right: 0;
+}
