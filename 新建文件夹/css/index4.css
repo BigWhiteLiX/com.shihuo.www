@@ -221,6 +221,25 @@ body {
     width: 630px;
 }
 
+.Air-yeezy-bottom-right-top-top {
+    height: 35px;
+    width: 630px;
+}
+
+.Air-yeezy-bottom-right-top-top p,
+.Air-yeezy-bottom-right-top-top h2 {
+    float: left;
+    font-size: 12px;
+    color: #333333;
+    line-height: 35px;
+    font-weight: normal;
+}
+
+.Air-yeezy-bottom-right-top-top h2 {
+    float: right;
+}
+
+
 /* 底部图标 */
 .ico {
     height: 162px;
