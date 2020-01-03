@@ -17,7 +17,6 @@ p {
   width: 540px;
   height: 580px;
   box-sizing: border-box;
-  padding-left: 80px;
 }
 .box p {
   font-size: 14px;
@@ -27,6 +26,7 @@ p {
   width: 380px;
   box-sizing: border-box;
   text-align: center;
+  margin-left: 80px;
 }
 .box main input {
   height: 46px;
@@ -34,12 +34,39 @@ p {
   margin: 0 auto;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  margin-bottom: 38px;
+  margin-top: 45px;
   padding-left: 12px;
   font-size: 14px;
 }
-.box main input:nth-child(3) {
-  margin-bottom: 0;
+.box main input:nth-child(4) {
+  height: 46px;
+  width: 165px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-top: 22px;
+  float: left;
+}
+.box main .ipone {
+  float: right;
+  height: 46px;
+  width: 182px;
+  border: none;
+  background-color: #e42837;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+.box main p {
+  margin-left: 0;
+  margin-top: 0;
+  float: left;
+  color: #575757;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.box main p a {
+  color: #4dbcff;
 }
 .box main a {
   line-height: 2;
@@ -76,10 +103,11 @@ p {
   background-color: #e42837;
   color: #fff;
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .box .math {
   margin-top: 77px;
+  margin-left: 60px;
 }
 .box .math a {
   color: #4dbcff;
